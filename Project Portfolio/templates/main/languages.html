@@ -1,0 +1,46 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+
+{% include 'main/nav.html' %}
+
+<div class="container">
+    <h1>Computer Languages</h1>
+
+    <div class="row">
+        <div class="col s12 m6">
+            <ul class="collapsible">
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">filter_drama</i>Java</div>
+                  <div class="collapsible-body"><span>I am very Proficient in this Language with 5* Hackerrank in Java!</span></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">place</i>Python</div>
+                  <div class="collapsible-body"><span>I have don a python master course from coding blocks so know a lot of stuff and skills related to python</span></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">whatshot</i>Django</div>
+                  <div class="collapsible-body"><span>I have learned Django With python and Knows how to work Django with html,css and js as backend and this portfolio website is made with django as backend!</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">place</i>HTML & CSS</div>
+                    <div class="collapsible-body"><span>Learned HTML with various css affects and skills with it!</span></div>
+                </li>
+              </ul>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
+
+{% block script %}
+
+<script>
+      document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems);
+  });
+
+</script>
+{% endblock %}

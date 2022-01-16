@@ -1,0 +1,59 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+ {% include 'main/nav.html' %}
+
+<div class="container">
+    <h1 class="center-align">Home Page</h1>
+
+    <div class="row">
+        <div class="col s12 m4">
+            <div class="card blue-grey lighten-1">
+                <div class="card-content white-text">
+                  <img class="materialboxed responsive-img" src="https://minio.cb.lk/oneauth-assets/user179761_1642240443841.png">  
+                  <span class="card-title">{{ name }}</span>
+                </div>
+                <div class="card-action">
+                    <a href="https://github.com/AmanJain2401">Github</a>
+                    <a href="https://www.linkedin.com/in/aman-jain-530bb9167/">linkedIn</a>
+                  </div>
+              </div>
+        </div>
+
+        <div class="col s12 m8">
+            <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                  <style>
+                     .card-content{
+                      background-image: url('https://i.ytimg.com/vi/4l6J5jhRgos/maxresdefault.jpg'); 
+                       }
+                  </style>  
+                  <span class="card-title">About Me</span>
+                  <p>
+                      {{ about_me }} 
+                      <br>
+                      I am a very Enthusiastic Coder and Love to learn new tech specs and Tools and i have major interests and Skills in:
+                      <li>Java</li>
+                      <li>Python</li>
+                      <li>Web Devs</li>
+                      <li>ML and Data Science</li>
+                  </p>
+                </div>
+              </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block script %}
+
+<script>
+     document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems);
+  });
+
+</script>
+{% endblock %}
